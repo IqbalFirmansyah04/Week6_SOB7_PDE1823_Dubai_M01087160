@@ -1,5 +1,3 @@
-# Calculating Grades (ok, let me think about this one)
-
 # Write a program that will average 3 numeric exam grades, return an average test score, a corresponding letter grade, and a message stating whether the student is passing.
 
 # Average	Grade
@@ -17,40 +15,41 @@
 # Exams: 50, 51, 0
 # Average: 33
 # Grade: F
-# Student iis failing.
+# Student is failing.
 
 exam_one = int(input("Input exam grade one: "))
 
-exam_two = input("Input exam grade two: "))
+exam_two = int(input("Input exam grade two: ")) #add int before input
 
-exam_3 = str(input("Input exam grade three: "))
+exam_three = int(input("Input exam grade three: ")) #replace str with int; replace exam_3 with exam_three
 
-grades = [exam_one exam_two exam_three]
+grades = [exam_one, exam_two, exam_three] #add commas after each variable
+
 sum = 0
-for grade in grade:
-  sum = sum + grade
+for grade in grades: #add s to grade 
+  sum += grade #add + before = 
 
-avg = sum / len(grdes)
+avg = sum / len(grades) #add a to grdes
 
 if avg >= 90:
     letter_grade = "A"
-elif avg >= 80 and avg < 90
+elif avg >= 80 and avg < 90: #add : after 90
     letter_grade = "B"
-elif avg > 69 and avg < 80:
-    letter_grade = "C'
-elif avg <= 69 and avg >= 65:
-    letter_grade = "D"
-elif:
+elif avg >= 70 and avg < 80: #replace >69 with >= 70
+    letter_grade = "C" #replace ' with " after C
+elif avg >= 60 and avg < 70: #replace avg <= 69 with >=60; replace avg >= 65 with avg < 70
+    letter_grade = "D" 
+else: #replace elif with else
     letter_grade = "F"
-
+    
 for grade in grades:
-    print("Exam: " + str(grade))
+    print("Exam: ", grade)
 
-    print("Average: " + str(avg))
+print("Average: ", round(avg)) #add round to avg, remove from loop for loop to prevent repetition in printing
+print("Grade: ", letter_grade)
 
-    print("Grade: " + letter_grade)
-
-if letter-grade is "F":
-    print "Student is failing."
+if letter_grade == "F": #replace is with ==, replace letter-grade with letter_grade
+    print("Student is failing.") #add parenthesis, remove spacing
 else:
-    print "Student is passing."
+    print("Student is passing.") #add parenthesis, remove spacing
+
