@@ -1,5 +1,5 @@
-greeting = input("Hello, possible pirate! What's the password?)
-if greeting in ["Arrr!"]: # NG replaced ) by ]
-	print("Go away, pirate.")
-elif
-print("Greetings, hater of pirates!")
+greeting = input("Hello, possible pirate! What's the password?") #added quotation
+if greeting == "Arrr!": #added proper syntax
+    print("Go away, pirate.")
+else: #replace elif with else
+    print("Greetings, hater of pirates!")
